@@ -505,7 +505,7 @@ border-color : #000000;
 
 
 .button {
-background-image : url("../images/search.svg");
+background-image : url("../svg/search.svg");
 background-size: 20px;  
 background-color: #b59f5b;
 background-repeat: no-repeat;
