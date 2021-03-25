@@ -15,7 +15,15 @@
 <img src="svg/noemi-logo.svg" width="180" alt="Awesome Logo" />
 </a>
         </div>
-      <nav class="header-nav">
+    
+<!--мобильное меню-->
+<div class="menu">
+        <button class="menu__button js-menu__button">
+          <span class="menu__button-label">открыть меню</span>
+        </button>
+        </div>
+<!--конец моб. меню-->
+  <nav class="header-nav">
         <ul class="header-list">
             <li class="header-list-item"><a href="#">Главная</a></li>
             <li class="header-list-item"><a href="#">посты</a></li>
@@ -79,7 +87,7 @@
   <div class="main-wrapper">
   	    <main class="news">
             <article class="card">
-                <img class="card-img" src="images/last-post1.jpg" alt="изображение1" width="65%">
+                <img class="card-img" src="images/last-post1.jpg" alt="изображение1" width="380px">
                 <div class="card-header">
                     <ul class="tags_post"> 
                       <li class="post-tags-item"><a class="post-tags-link" href="#">Travel</a></li>
@@ -287,8 +295,8 @@
                     </div>
             <div class="price_button">
             	<div class="price">
-            		<p class="price_text"> 1000 р</p>
-            		<p class="price_text_new"> 800 р </p>
+            		<p class="price_text"> 1000 ₽</p>
+            		<p class="price_text_new"> 800 ₽ </p>
             	</div>
             	<button class="button_product"> В магазин </button>
             	</div>
@@ -307,7 +315,7 @@
                     </div>
             <div class="price_button">
             	<div class="price">
-            		<p class="price_text_new"> 3500 р </p>
+            		<p class="price_text_new"> 3500 ₽ </p>
             	</div>
             	<button class="button_product"> В магазин </button>
             	</div>
@@ -325,8 +333,8 @@
                     </div>
             <div class="price_button">
             	<div class="price">
-            		<p class="price_text"> 500 р</p>
-            		<p class="price_text_new"> 400 р </p>
+            		<p class="price_text"> 500 ₽</p>
+            		<p class="price_text_new"> 400 ₽ </p>
             	</div>
             	<button class="button_product"> В магазин </button>
             	</div>
@@ -357,12 +365,14 @@
   </div>
   </div>
   </footer>
+  
   <!--Popup-->
   <div class="popup_general">
   	<div class="vual">
+<!--форма-->  	
   	<div class="popup">
   		<div class="new_posts_title">Ваш фидбек</div>
-<!--форма-->
+
   		<form class="form">
   <div class="form__row">
     <label class="form__label">
@@ -391,13 +401,10 @@
      <textarea class="field" placeholder="Может, больше рецептов?" ></textarea>
     </label> 
   </div>
- 
-
-  <div class="form__row">  
-    <button class="button_subcribe">Отправить</button>
+ <div class="form__row">  
+    <button class="button_popup">Отправить</button>
   </div>  
 </form>
-
   	</div>	
   	</div>
   	
