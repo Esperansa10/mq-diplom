@@ -10,11 +10,11 @@
 	<header class="header">
   <div class="header-wrapper">
     <div class="logo-menu">
-        <div>
+        
           <a href="/">
 <img src="svg/noemi-logo.svg" width="180" alt="Awesome Logo" />
 </a>
-        </div>
+       
     
 <!--мобильное меню-->
 <div class="menu">
@@ -23,6 +23,7 @@
         </button>
         </div>
 <!--конец моб. меню-->
+
   <nav class="header-nav">
         <ul class="header-list">
             <li class="header-list-item"><a href="#">Главная</a></li>
@@ -282,7 +283,7 @@
   <!--наши изделия-->
 <div class="trands">
 	<h4 class="trands_title">Наши изделия</h4>
-	<div class="trands_blocks">
+	<div class="products_blocks">
 		<div class="our_products">
 <picture>
  <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1200px)">
@@ -369,7 +370,10 @@
   <!--Popup-->
   <div class="popup_general">
   	<div class="vual">
-<!--форма-->  	
+<!--форма--> 
+<div class="popup-krestik">
+  		<div class="krestik"></div> 	
+  	
   	<div class="popup">
   		<div class="new_posts_title">Ваш фидбек</div>
 
@@ -386,13 +390,18 @@
  
   <div class="form__row">
     <div class="form__hint">Вы подписаны на email рассылку?</div>
-    <div class="form_radio">
-	<input type="radio" name="radio" value="1" checked>
-	<label>Да</label>
-	<input type="radio" name="radio" value="2">
-	<label>Нет</label>
+    
+	<label class="radio-group">
+	<input type="radio" class="radio" name="radio-group">
+	<span class="radio-group-text">Да</span>
+		</label>
+		<label class="radio-group">
+			<input type="radio" class="radio" name="radio-group">
+			<span class="radio-group-text">Нет</span>
+		</label>	
+
 	</div>  
-  </div>
+  
 
  <div class="form__row">
     <label class="form__label">
@@ -406,8 +415,8 @@
   </div>  
 </form>
   	</div>	
+  
   	</div>
-  	
   </div>
 
 </body>
