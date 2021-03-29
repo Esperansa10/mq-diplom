@@ -318,7 +318,6 @@ font-size: 0.8em;
 margin-left : auto;
 margin-right : auto;
 margin-top: 60px;  
-margin-bottom: 60px; 
 max-width: 1200px;  
 }
 
@@ -460,7 +459,9 @@ display: flex;
 align-items: flex-end;
 padding-left: 20px; 
 padding-right: 20px; 
-padding-bottom: 20px; 
+padding-bottom: 20px;
+margin-bottom: 1%; 
+
 }
 
 .trands_block3:before {
@@ -475,6 +476,8 @@ bottom : 0;
 background-color : #000000;
 opacity : 0.60;
 z-index: 1; 
+margin-bottom: 1%; 
+
 }
 
 .trands_block4 {
@@ -601,6 +604,8 @@ align-items: flex-end;
 padding-left: 20px; 
 padding-right: 20px; 
 padding-bottom: 20px; 
+margin-bottom: 1%; 
+
 }
 
 .trands_block3:before {
@@ -615,6 +620,8 @@ bottom : 0;
 background-color : #000000;
 opacity : 0.60;
 z-index: 1; 
+margin-bottom: 1%; 
+
 }
 
 .trands_block4 {
@@ -646,8 +653,17 @@ opacity : 0.60;
 z-index: 1; 
 }
 
-}
 /*конец моб. блоки тренды*/
+
+.main-wrapper {
+display: flex;
+flex-wrap: wrap;
+}
+
+.aside {
+	margin-top: 45px; 
+}
+}
 
 
 @media (min-width: 1200px) {
@@ -840,6 +856,17 @@ display : flex;
 width: 100%; 
 }
 
+@media (min-width: 1200px) {
+
+.card:not(:first-child) {
+  margin-top: 70px;
+}
+
+.aside {
+width: 270px;
+}
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
 
 .card {
@@ -864,12 +891,55 @@ margin-left : 0;
 border-bottom: 2px solid #eeeeee;
 }
 
-
-}
-
 .card:not(:first-child) {
   margin-top: 70px;
 }
+
+.aside {
+width: 270px;
+}
+
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+.news {
+width : 100%;
+}
+
+.card {
+display : flex;
+flex-wrap: wrap;
+width: 100%; 
+}	
+
+.card-img {
+box-sizing : border-box;
+width: 100%; 
+margin-bottom: 16px; 
+ 
+}
+
+.card-content {
+text-align : left;
+color : #0f0d0e;
+font-family : 'Open Sans';
+font-size : 1em;
+margin-left : 0;
+border-bottom: 2px solid #eeeeee;
+}
+
+.card:not(:first-child) {
+  margin-top: 30px;
+}
+
+.aside {
+width: 100%;
+}
+
+}
+/*конец моб. верстки main+aside на 360*/
+
 
 
 .card-img {
@@ -955,9 +1025,7 @@ font-size : 1em;
 margin-left : 0;
 }
 
-.aside {
-width: 270px;
-}
+
 
 .new_posts {
 margin-bottom: 60px;
@@ -1020,13 +1088,19 @@ display: flex;
 width : 100%;
 }
 
+
+.search-group {
+width : 100%;	
+}
+
 .field-search {
 height : 50px;
-width : 200px;
+width : 100%;
 padding-left: 15px;
 background-color : #f4f7f6;
 border: 0px; 
 }
+
 
 .field:focus {
 outline : none;
@@ -1135,7 +1209,7 @@ font-family : 'Open Sans';
  color: #b59f5b;
 }
 
-/*стили для наши изделия  */
+/*стили для наши изделия и футера  */
 
 @media (min-width: 1200px) { 
 .our_products { 
@@ -1145,9 +1219,15 @@ flex-direction: column;
 align-items: center;
 margin: auto; 
 }
+
+.footer {
+margin-bottom: 45px;  
+margin-top: 45px;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+}
+
+@media (min-width: 360px) and (max-width: 767px), (min-width: 768px) and (max-width: 1199px) {
 .our_products { 
 max-width: 333px;
 display: flex;
@@ -1156,6 +1236,11 @@ align-items: center;
 margin-bottom: 30px; 
 margin-right: 3%;
 margin-left: 3%;  
+}
+
+.footer {
+margin-bottom: 55px;  
+margin-top: 15px;
 }
 
 }
@@ -1251,7 +1336,6 @@ font-family : 'Open Sans';
 font-size : 0.8em;
 margin-left: auto;
 margin-right: auto; 
-margin-bottom: 45px;  
 }
 
 .footer-wrapper {
