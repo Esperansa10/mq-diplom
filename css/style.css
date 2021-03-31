@@ -251,7 +251,7 @@ display: none;
     background-color: #ffffff;
     position: absolute;
     left: 0;
-    right: 0;
+    
 }
 
 .menu__button-label {
@@ -386,6 +386,98 @@ justify-content: space-between;
 .trands_block {
 width: 44.0%;
 min-height: 320px;
+}
+
+.trands_block2 {
+width: 44.0%;
+min-height: 320px;
+}
+
+.trands_block3 {
+width: 44.0%;
+min-height: 320px;
+}
+
+.trands_block4 {
+width: 44%;
+min-height: 320px;
+}
+}
+
+/*моб. блоки тренды*/
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+.trands_blocks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.products_blocks {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.trands_block {
+min-height: 320px;
+}
+
+
+.trands_block2 {
+min-height: 320px;
+}
+
+.trands_block3 {
+min-height: 320px;
+}
+
+
+.trands_block4 {
+min-height: 320px;
+}
+
+
+/*конец моб. блоки тренды*/
+
+.main-wrapper {
+display: flex;
+flex-wrap: wrap;
+}
+
+.aside {
+	margin-top: 45px; 
+}
+}
+
+
+@media (min-width: 1200px) {
+
+/*картинки для блока трендов */ 
+.trands_block {
+width: 21.5%;
+}
+
+
+.trands_block2 {
+width: 21.5%;
+}
+
+
+.trands_block3 {
+width: 21.5%;
+}
+
+.trands_block4 {
+width: 21.5%;
+}
+}
+
+/*общие стили для блоков наши тренды*/
+.trands_block {
+min-height: 320px;
 background-image : url(../images/trend1.jpg);
 background-repeat: no-repeat;
 background-position: center center;
@@ -416,7 +508,6 @@ z-index: 1;
 
 
 .trands_block2 {
-width: 44.0%;
 min-height: 320px;
 background-image : url(../images/trend2.jpg);
 background-repeat: no-repeat;
@@ -448,7 +539,6 @@ z-index: 1;
 }
 
 .trands_block3 {
-width: 44.0%;
 min-height: 320px;
 background-image : url(../images/trend3.jpg);
 background-repeat: no-repeat;
@@ -482,7 +572,6 @@ margin-bottom: 1%;
 }
 
 .trands_block4 {
-width: 44%;
 min-height: 320px;
 background-image : url(../images/trend4.jpg);
 background-repeat: no-repeat;
@@ -495,6 +584,8 @@ align-items: flex-end;
 padding-left: 20px; 
 padding-right: 20px; 
 padding-bottom: 20px; 
+margin-bottom: 1%; 
+
 }
 
 .trands_block4:before {
@@ -511,287 +602,7 @@ opacity : 0.60;
 z-index: 1; 
 }
 
-}
-
-/*моб. блоки тренды*/
-
-@media (min-width: 360px) and (max-width: 767px) {
-
-.trands_blocks {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-}
-
-.products_blocks {
-	display: flex;
-	flex-wrap: wrap;
-	
-}
-
-.trands_block {
-min-height: 320px;
-background-image : url(../images/trend1.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-margin-bottom: 1%; 
-}
-
-.trands_block:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-
-.trands_block2 {
-min-height: 320px;
-background-image : url(../images/trend2.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-margin-bottom: 1%; 
-
-}
-
-.trands_block2:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-.trands_block3 {
-min-height: 320px;
-background-image : url(../images/trend3.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-margin-bottom: 1%; 
-
-}
-
-.trands_block3:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-margin-bottom: 1%; 
-
-}
-
-.trands_block4 {
-min-height: 320px;
-background-image : url(../images/trend4.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-}
-
-.trands_block4:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-/*конец моб. блоки тренды*/
-
-.main-wrapper {
-display: flex;
-flex-wrap: wrap;
-}
-
-.aside {
-	margin-top: 45px; 
-}
-}
-
-
-@media (min-width: 1200px) {
-
-/*картинки для блока трендов */ 
-.trands_block {
-width: 21.5%;
-min-height: 320px;
-background-image : url(../images/trend1.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-}
-
-.trands_block:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-
-.trands_block2 {
-width: 21.5%;
-min-height: 320px;
-background-image : url(../images/trend2.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-}
-
-.trands_block2:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-.trands_block3 {
-width: 21.5%;
-min-height: 320px;
-background-image : url(../images/trend3.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-}
-
-.trands_block3:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-.trands_block4 {
-width: 21.5%;
-min-height: 320px;
-background-image : url(../images/trend4.jpg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: cover;
-position: relative;
-z-index: 1; 
-display: flex;
-align-items: flex-end;
-padding-left: 20px; 
-padding-right: 20px; 
-padding-bottom: 20px; 
-}
-
-.trands_block4:before {
-position : absolute;
-content : "";
-width : 100%;
-height : 100%;
-top : 0;
-left : 0;
-right : 0;
-bottom : 0;
-background-color : #000000;
-opacity : 0.60;
-z-index: 1; 
-}
-
-}
+/*закончились общие стили для блоков наши тренды*/
 
 .trands_post {
 font-family : 'Open Sans';
