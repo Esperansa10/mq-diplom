@@ -215,6 +215,7 @@ display: none;
     display: flex;
     align-items: center;
     margin-bottom: 175px; 
+    align-self: flex-end;
 
 }
 
@@ -350,32 +351,35 @@ margin: 10px auto 0;
 }
 
 
-@media (min-width: 1200px) {
-
 .trands_blocks {
 	display: flex;
 	width: 100%;
 	margin-left: auto; 
 	margin-right: auto; 
 justify-content: space-between;
-
 }
+
+@media (min-width: 1200px),
+(min-width: 641px) and (max-width: 1200px) and (orientation:landscape) {
 
 .products_blocks {
 	display: flex;
-	flex-wrap: wrap;
-	
+	flex-wrap: wrap;	
 }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px), 
+(min-width: 360px) and (max-width: 768px) and (orientation:landscape),
+(min-width: 641px) and (max-width: 1200px) and (orientation:portrait)  {
 
 .trands_blocks {
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-
 }
+
+.trands_blocks:nth-child(2n) {
+margin-left: 20px; 
+}
+
 
 .products_blocks {
 	display: flex;
@@ -409,10 +413,8 @@ min-height: 320px;
 @media (min-width: 360px) and (max-width: 767px) {
 
 .trands_blocks {
-	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-
+	
 }
 
 .products_blocks {
@@ -1056,6 +1058,9 @@ margin-bottom: 55px;
 margin-top: 15px;
 }
 
+.popup-cross {
+	width: 90%;
+}
 }
 
 
@@ -1224,16 +1229,16 @@ z-index: 2;
 }
 
 
-.popup-krestik {
-	width: 390px;
+.popup-cross {
+max-width: 390px;
 	margin: auto;
-	 
 }
 
-.krestik {
+.cross {
  background-image: url(../svg/form-x.svg);
  width: 25px; 
- height: 25px; 
+ height: 25px;
+ margin-left: 93%; 
  
 }
 
