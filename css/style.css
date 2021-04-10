@@ -22,6 +22,13 @@ ul, ol {
 }
 
 
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}  
+
 @media (min-width: 1200px) {
 .header {
 padding: 30px 0;
@@ -46,7 +53,7 @@ height: 390px;
 }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 .header {
 padding: 30px 0;
 background-image : url("../images/banner-mobile.jpg");
@@ -197,7 +204,7 @@ z-index: 2;
 }
 
 /*мобильное меню*/
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
 .logo-menu {
 justify-content : space-between;
@@ -389,7 +396,7 @@ background-image: url(../images/trend4.jpg);
 }
 
 @media (min-width: 768px) and (max-width: 1199px), 
-(min-width: 360px) and (max-width: 768px) and (orientation:landscape),
+(min-width: 320px) and (max-width: 768px) and (orientation:landscape),
 (min-width: 641px) and (max-width: 1200px) and (orientation:portrait)  {
 
 .trands_blocks {
@@ -444,7 +451,7 @@ margin-right: 0px;
 
 /*моб. блоки тренды*/
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
 .trands_blocks {
 	flex-wrap: wrap;
@@ -651,7 +658,7 @@ width: 270px;
 
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
 .news {
 width : 100%;
@@ -688,7 +695,7 @@ width: 100%;
 }
 
 }
-/*конец моб. верстки main+aside на 360*/
+/*конец моб. верстки main+aside на 320*/
 
 
 
@@ -841,7 +848,8 @@ width : 100%;
 
 
 .search-group {
-width : 100%;	
+width : 100%;
+display: flex;
 }
 
 .field-search {
@@ -866,7 +874,7 @@ background-color: #b59f5b;
 background-repeat: no-repeat;
 background-position: center; 
 border: 0px; 
-width : 50px;
+min-width : 50px;
 height : 50px;
 cursor: pointer;
 }
@@ -999,7 +1007,7 @@ margin-left: 3%;
 
 } 
 
-@media (min-width: 360px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 767px){
 .our_products { 
 max-width: 100%;
 display: flex;
@@ -1313,7 +1321,7 @@ text-transform: uppercase;
 
 }
 
-select {
+.select_form {
   background-image: url("../svg/form-arrows.svg");
   background-size: 10px; 
   background-repeat: no-repeat;
@@ -1323,10 +1331,9 @@ select {
 }
 
 
-textarea  {
+.textarea_form  {
 height: 130px; 
 background-color: #f4f7f6;
-font-family: inherit;
 -webkit-appearance: none;
 -moz-appearance: none;
 }
