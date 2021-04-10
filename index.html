@@ -235,10 +235,15 @@
                 </article>
               <!--поле поиска-->
            <form class="search">
-                    <label class="search-group">
+                    
+                    <label class="search-group">	
                         <input class="field-search" name="query" placeholder="Найти..." required>
-                    </label>
-                    <button class="button"></button>
+                        <span class="visually-hidden">Введите текст
+                        </span>
+                   <button class="button"><span class="visually-hidden">Введите текст
+                        </span></button>
+                   
+                        </label>
                 </form>
            </section>
 
@@ -355,11 +360,22 @@
   <div class="footer-wrapper">
   <address class="adress">
         <ul class="icon-field">
-            <li class="icon-field-item"><a class="icon-field-link icon-field-link-twitter" href="#" alt="twitter"></a></li>
-           <li class="icon-field-item"><a class="icon-field-link icon-field-link-pinterest" href="#" alt="pitnerest"></a></li>
-           <li class="icon-field-item"><a class="icon-field-link icon-field-link-facebook" href="#" alt="facebook"></a></li>
-           <li class="icon-field-item"><a class="icon-field-link icon-field-link-instagram" href="#" alt="instagram"></a></li>
-           <li class="icon-field-item"> <a class="icon-field-link icon-field-link-tubler" href="#" alt="tubler"></a></li>
+            <li class="icon-field-item"><a class="icon-field-link icon-field-link-twitter" href="#"> 
+<span class="visually-hidden">twitter</span>
+            	</a></li>
+           <li class="icon-field-item"><a class="icon-field-link icon-field-link-pinterest" href="#" alt="pitnerest">
+           	<span class="visually-hidden">pinterest</span>
+           </a></li>
+           <li class="icon-field-item"><a class="icon-field-link icon-field-link-facebook" href="#" alt="facebook">
+           	<span class="visually-hidden">facebook</span>
+           </a></li>
+           <li class="icon-field-item"><a class="icon-field-link icon-field-link-instagram" href="#" alt="instagram">
+           	<span class="visually-hidden">instagram</span>
+           </a></li>
+           <li class="icon-field-item"> <a class="icon-field-link icon-field-link-tubler" href="#" alt="tubler">
+           	<span class="visually-hidden">tubler</span>
+
+           </a></li>
                 </ul>
   </address>
 <div class="footer-copyright">
@@ -382,7 +398,7 @@
   <div class="form__row">
     <label class="form__label">
       <div class="form__hint">Как часто вы заходите на сайт</div>
-     <select class="field" name="theme" required>
+     <select class="select_form field" name="theme" required>
         <option> Почти каждый день</option>
         <option>Другой вариант</option>                    
       </select>
@@ -408,10 +424,10 @@
     <label class="form__label">
       <div class="form__hint">Расскажите, какой контент вы хотели бы видеть
 на нашем сайте?</div>
-     <textarea class="field" placeholder="Может, больше рецептов?" ></textarea>
+     <textarea class="textarea_form field" placeholder="Может, больше рецептов?" ></textarea>
     </label> 
   </div>
- <div class="form__row">  
+ <div class="form__row">  	
     <button class="button_popup">Отправить</button>
   </div>  
 </form>
