@@ -10,11 +10,11 @@ src : url("../fonts/OpenSans-Bold.woff");
 font-weight : 600;
 }
 
-body {
-margin: 0;
-
-
+.body {
+	min-width: 320px; 
+	margin: 0;
 }
+
 
 ul, ol {
   margin: 0;
@@ -65,12 +65,6 @@ height: 100vh;
 }
 
 }
-
-
-.body {
-	min-width: 320px; 
-}
-
 
 
 .header-wrapper {
@@ -372,7 +366,8 @@ justify-content: space-between;
 
 .products_blocks {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+
 }
 
 
@@ -879,6 +874,10 @@ height : 50px;
 cursor: pointer;
 }
 
+.button:hover {	
+background-color: #000000;
+color: white;
+}
 
 .subcribe {
 margin-bottom: 60px;
@@ -903,6 +902,11 @@ background-color: #b59f5b;
 color: white;
 font-family: 'Open Sans';
 text-transform: uppercase; 
+}
+
+.button_subcribe:hover {	
+background-color: #000000;
+color: white;
 }
 
 .tags {
@@ -943,10 +947,7 @@ font-size : 0.8em;
 border: none;
 padding : 12px 0;
 list-style-type: none;
-}
-
-.themes_cloud:not(:last-child) {
- border-bottom: #eeeeee solid 1px;
+border-bottom: #eeeeee solid 1px;
 }
 
 .themes_cloud > a {
@@ -1032,7 +1033,10 @@ margin-top: 15px;
 .our_product_border {
 	border: #b59f5b solid 3px;
 	margin-top: -30px; 
-	padding:  30px; 
+	padding: 30px; 
+	height: 250px; 
+	
+
 }
 
 .text-link {
@@ -1061,6 +1065,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 justify-content: flex-end;
+
 }
 
 .price_text {
@@ -1076,10 +1081,12 @@ text-decoration: line-through;
 color : #0f0d0e;
 margin: 0;
 font-family : 'Open Sans';
+font-weight: bold;
 font-size : 1.2em;
 text-transform : uppercase;
 text-decoration: none;
 text-align : left;
+
 
 }
 
@@ -1089,6 +1096,8 @@ display: flex;
 justify-content: space-between;
 
 }
+
+
 
 .button_product {
 cursor: pointer;
@@ -1100,6 +1109,11 @@ background-color: #b59f5b;
 color: white;
 font-family: 'Open Sans';
 text-transform: uppercase; 
+}
+
+.button_product:hover {	
+background-color: #000000;
+color: white;
 }
 
 
@@ -1319,6 +1333,11 @@ color: white;
 font-family: 'Open Sans';
 text-transform: uppercase; 
 
+}
+
+.button_popup:hover {	
+background-color: #000000;
+color: white;
 }
 
 .select_form {
